@@ -5,10 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Steven Yudianto | Front-End Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <style>
       body {
-        background-color: #0f172a; /* hitam kebiruan */
-        color: #e0f2f1; /* warna teks terang kehijauan */
+        background-color: #0f172a;
+        color: #e0f2f1;
+      }
+
+      @keyframes spinIn {
+        0% {
+          transform: rotate(-360deg) scale(0);
+          opacity: 0;
+        }
+        100% {
+          transform: rotate(0deg) scale(1);
+          opacity: 1;
+        }
+      }
+
+      .animate-spin-in {
+        animation: spinIn 1s ease-out forwards;
       }
     </style>
   </head>
@@ -20,7 +39,7 @@
         <ul class="flex gap-6 text-white font-semibold">
           <li><a href="#profile" class="hover:underline">Profile</a></li>
           <li><a href="#about" class="hover:underline">About Me</a></li>
-          <li><a href="#skills" class="hover:underline">Skill</a></li>
+          <li><a href="#experience" class="hover:underline">Experience</a></li>
           <li><a href="#gallery" class="hover:underline">Gallery</a></li>
           <li><a href="#cv" class="hover:underline">View PDF</a></li>
         </ul>
@@ -29,20 +48,18 @@
 
     <!-- Profile Section -->
     <main id="profile" class="py-20">
-      <div
-        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 px-6"
-      >
-        <div class="flex-1">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 px-6">
+        <div class="flex-1 animate__animated animate__fadeInLeft">
           <h1 class="text-4xl font-bold mb-4 text-[#5eead4]">
             Steven Yudianto
           </h1>
           <h2 class="text-2xl mb-4 text-[#99f6e4]">Front-End Developer</h2>
           <p class="text-lg">
             Passionate about building responsive web interfaces and delightful
-            user experiences. Experienced in HTML, CSS, JavaScript, and React.
+            user experiences. Experienced in HTML, CSS, JavaScript, React, and UI/UX design using Figma.
           </p>
         </div>
-        <div>
+        <div class="animate-spin-in">
           <img
             src="stev.jpg"
             alt="Steven Yudianto"
@@ -54,14 +71,44 @@
 
     <!-- About Me -->
     <section id="about" class="py-16 bg-[#0f766e] text-white">
-      <div class="max-w-4xl mx-auto px-6">
+      <div class="max-w-4xl mx-auto px-6 animate__animated animate__fadeInUp">
         <h2 class="text-3xl font-bold text-center mb-6">About Me</h2>
         <p class="text-lg text-center">
           I am a student of Informatics Engineering who loves to design and
-          develop beautiful user interfaces. I'm constantly learning and
-          explorin
+          develop beautiful user interfaces. I'm constantly learning and exploring modern technologies.
         </p>
       </div>
     </section>
-  </body>
-</html>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-[#134e4a] text-white">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6 animate__animated animate__fadeInDown">Experience</h2>
+        <p class="text-lg mb-10">
+          Tools & technologies I use to bring designs to life:
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-10">
+          <!-- HTML -->
+          <div class="flex flex-col items-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-16 h-16" />
+            <span class="mt-2">HTML5</span>
+          </div>
+          <!-- CSS -->
+          <div class="flex flex-col items-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-16 h-16" />
+            <span class="mt-2">CSS3</span>
+          </div>
+          <!-- JavaScript -->
+          <div class="flex flex-col items-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-16 h-16" />
+            <span class="mt-2">JavaScript</span>
+          </div>
+          <!-- React -->
+          <div class="flex flex-col items-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-16 h-16" />
+            <span class="mt-2">React</span>
+          </div>
+          <!-- Figma -->
+          <div class="flex flex-col items-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/
