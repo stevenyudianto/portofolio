@@ -31,84 +31,144 @@
       }
     </style>
   </head>
-  <body class="font-sans">
+  <body class="font-sans bg-[#0f172a] text-cyan-100">
     <!-- Header -->
-    <header class="bg-[#0f766e] p-6 shadow-lg sticky top-0 z-50">
+    <header
+      class="bg-gradient-to-r from-teal-600 via-emerald-500 to-cyan-500 p-6 shadow-lg sticky top-0 z-50"
+    >
       <nav class="flex justify-between items-center max-w-6xl mx-auto">
-        <h1 class="text-2xl text-white font-bold">MY Porto</h1>
-        <ul class="flex gap-6 text-white font-semibold">
-          <li><a href="#profile" class="hover:underline">Profile</a></li>
-          <li><a href="#about" class="hover:underline">About Me</a></li>
-          <li><a href="#experience" class="hover:underline">Experience</a></li>
-          <li><a href="#gallery" class="hover:underline">Gallery</a></li>
-          <li><a href="#cv" class="hover:underline">View PDF</a></li>
+        <h1 class="text-3xl font-bold text-yellow-300">🚀 MY PORTO</h1>
+        <ul class="flex gap-6 text-white font-semibold text-lg">
+          <li>
+            <a href="#profile" class="hover:text-yellow-300 transition"
+              >Profile</a
+            >
+          </li>
+          <li>
+            <a href="#about" class="hover:text-yellow-300 transition"
+              >About Me</a
+            >
+          </li>
+          <li>
+            <a href="#experience" class="hover:text-yellow-300 transition"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="#gallery" class="hover:text-yellow-300 transition"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a href="#cv" class="hover:text-yellow-300 transition">View PDF</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <!-- Profile Section -->
     <main id="profile" class="py-20">
-      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 px-6">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 px-6"
+      >
         <div class="flex-1 animate__animated animate__fadeInLeft">
-          <h1 class="text-4xl font-bold mb-4 text-[#5eead4]">
+          <h1 class="text-5xl font-extrabold mb-4 text-cyan-300">
             Steven Yudianto
           </h1>
-          <h2 class="text-2xl mb-4 text-[#99f6e4]">Front-End Developer</h2>
-          <p class="text-lg">
+          <h2 class="text-3xl mb-4 text-pink-300">Front-End Developer</h2>
+          <p class="text-lg text-white">
             Passionate about building responsive web interfaces and delightful
-            user experiences. Experienced in HTML, CSS, JavaScript, React, and UI/UX design using Figma.
+            user experiences. Experienced in
+            <span class="text-yellow-300 font-bold">HTML</span>,
+            <span class="text-yellow-300 font-bold">CSS</span>,
+            <span class="text-yellow-300 font-bold">JavaScript</span>,
+            <span class="text-yellow-300 font-bold">React</span>, and UI/UX
+            design using <span class="text-yellow-300 font-bold">Figma</span>.
           </p>
         </div>
         <div class="animate-spin-in">
           <img
             src="stev.jpg"
             alt="Steven Yudianto"
-            class="w-64 h-64 rounded-full object-cover shadow-lg border-4 border-[#5eead4]"
+            class="w-64 h-64 rounded-full object-cover shadow-lg border-4 border-cyan-400 hover:scale-105 transition-transform"
           />
         </div>
       </div>
     </main>
 
     <!-- About Me -->
-    <section id="about" class="py-16 bg-[#0f766e] text-white">
+    <section
+      id="about"
+      class="py-16 bg-gradient-to-r from-cyan-700 to-teal-700 text-white"
+    >
       <div class="max-w-4xl mx-auto px-6 animate__animated animate__fadeInUp">
-        <h2 class="text-3xl font-bold text-center mb-6">About Me</h2>
-        <p class="text-lg text-center">
+        <h2 class="text-4xl font-bold text-center mb-6 text-yellow-300">
+          About Me
+        </h2>
+        <p class="text-lg text-center text-white">
           I am a student of Informatics Engineering who loves to design and
-          develop beautiful user interfaces. I'm constantly learning and exploring modern technologies.
+          develop beautiful user interfaces. I'm constantly learning and
+          exploring modern technologies.
         </p>
       </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-16 bg-[#134e4a] text-white">
+    <section
+      id="experience"
+      class="py-16 bg-gradient-to-r from-indigo-900 to-purple-900 text-white"
+    >
       <div class="max-w-5xl mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold mb-6 animate__animated animate__fadeInDown">Experience</h2>
-        <p class="text-lg mb-10">
-          Tools & technologies I use to bring designs to life:
-        </p>
+        <h2
+          class="text-4xl font-bold mb-10 animate__animated animate__fadeInDown text-cyan-300"
+        >
+          Experience
+        </h2>
+        <p class="text-lg mb-10 text-white">Tools & technologies I use:</p>
 
         <div class="flex flex-wrap justify-center gap-10">
           <!-- HTML -->
-          <div class="flex flex-col items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-16 h-16" />
-            <span class="mt-2">HTML5</span>
+          <div class="flex flex-col items-center hover:scale-110 transition">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              class="w-16 h-16"
+            />
+            <span class="mt-2 text-orange-400 font-semibold">HTML5</span>
           </div>
           <!-- CSS -->
-          <div class="flex flex-col items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-16 h-16" />
-            <span class="mt-2">CSS3</span>
+          <div class="flex flex-col items-center hover:scale-110 transition">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              class="w-16 h-16"
+            />
+            <span class="mt-2 text-blue-300 font-semibold">CSS3</span>
           </div>
           <!-- JavaScript -->
-          <div class="flex flex-col items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-16 h-16" />
-            <span class="mt-2">JavaScript</span>
+          <div class="flex flex-col items-center hover:scale-110 transition">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              class="w-16 h-16"
+            />
+            <span class="mt-2 text-yellow-300 font-semibold">JavaScript</span>
           </div>
           <!-- React -->
-          <div class="flex flex-col items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-16 h-16" />
-            <span class="mt-2">React</span>
+          <div class="flex flex-col items-center hover:scale-110 transition">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              class="w-16 h-16"
+            />
+            <span class="mt-2 text-cyan-300 font-semibold">React</span>
           </div>
           <!-- Figma -->
-          <div class="flex flex-col items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/
+          <div class="flex flex-col items-center hover:scale-110 transition">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+              class="w-16 h-16"
+            />
+            <span class="mt-2 text-pink-400 font-semibold">Figma</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
